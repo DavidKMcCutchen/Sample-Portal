@@ -1,0 +1,14 @@
+{
+    "transactions": [
+      {
+        "id": "1",
+        "name": "Example",
+        "value": "2.00"
+      },
+      {
+        "id": "2",
+        "name": "Wash Cycle",
+        "value": "1.50"
+      }
+    ]
+  }

@@ -2,7 +2,7 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "npmScope": "sample",
   "affected": {
-    "defaultBase": "main"
+    "defaultBase": "master"
   },
   "cli": {
     "packageManager": "npm"
@@ -16,9 +16,15 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "nx/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "MjA1OTUwZGYtMzg2Mi00YzVlLTg4NDItYmY4OWY0M2Q2OWEwfHJlYWQtd3JpdGU="
       }
     }
   },
@@ -45,5 +51,5 @@
       "style": "scss"
     }
   },
-  "defaultProject": "api"
+  "defaultProject": "dashboard"
 }

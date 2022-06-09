@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+// @import 'theme.scss';
+// @import 'variables';
+// @import 'utilities';
+// @import 'material-overrides';
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  height: 100%;
+  display: flex;
+}
+
+.header {
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  color: white;
+}
+
+.nav-link {
+  display: flex !important;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}

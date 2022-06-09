@@ -7,6 +7,8 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
@@ -15,7 +17,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sample/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@sample/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@sample/core-data": ["libs/core-data/src/index.ts"],
+      "@sample/core-state": ["libs/core-state/src/index.ts"],
+      "@sample/environment": ["libs/environment/src/index.ts"],
+      "@sample/material": ["libs/material/src/index.ts"],
+      "@sample/pipes": ["libs/pipes/src/index.ts"],
+      "@sample/theme": ["libs/theme/src/index.ts"],
+      "@sample/ui-login": ["libs/ui-login/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

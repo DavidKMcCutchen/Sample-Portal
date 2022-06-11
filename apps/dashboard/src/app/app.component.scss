@@ -1,4 +1,15 @@
+// Added this class and used space-between to spread out the title from the logout and register buttons.  Placed logout and
+// register buttons under the same div tags to keep them together.
 
+.mat-elevation-z4 {
+    display: flex;
+    justify-content: space-between;
+};
+
+.toolbar_buttons {
+    display: flex;
+    gap: 5px;
+};
 
 .app-content{
     height: 100%;

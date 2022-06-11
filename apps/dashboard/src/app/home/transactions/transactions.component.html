@@ -15,8 +15,8 @@
       </mat-expansion-panel-header>
     <mat-card-content>
       <mat-list>
-        <mat-list-item *ngFor="let transaction of trans" data-test="api-list-item" (click)="selected.emit(trans)">
-          <h3 matLine>{{transaction.id}}</h3>
+        <mat-list-item *ngFor="let transaction of trans" data-test="trans-list-item" (click)="selected.emit(trans)">
+          <h3 matLine>Transaction ID: {{transaction.id}}</h3>
           <p matLine> Description: {{transaction.name}}</p>
           <p matLine> Value: ${{transaction.value}}</p>
           
@@ -35,4 +35,9 @@
     </mat-card-content>
   </mat-expansion-panel>
   </mat-card>
-  
+  <mat-paginator [length]="length"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              (page)="paginator()"
+              aria-label="Select page">
+</mat-paginator>

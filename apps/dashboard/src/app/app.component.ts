@@ -14,10 +14,10 @@ export class AppComponent {
   positionOptions: TooltipPosition[] = ['below', 'above', 'left', 'right'];
   position = new FormControl(this.positionOptions[0]);
 
-  title= 'Sample MDV';
+  title= 'Sample 4thIQ Portal';
   links= [
     {path: '', icon: 'home', title: 'Home'},
-    {path: 'home', icon: 'view_list', title: 'Sample'}
+    {path: 'home', icon: 'view_list', title: 'Transactions'}
   ];
 
 

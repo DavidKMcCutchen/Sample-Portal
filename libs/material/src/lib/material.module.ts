@@ -17,6 +17,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
 
 @NgModule({
   imports: [
@@ -37,7 +39,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatToolbarModule,
     MatButtonToggleModule,
     MatExpansionModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatPaginatorModule
+
   ],
   exports: [
     MatButtonModule,
@@ -57,7 +61,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatToolbarModule,
     MatButtonToggleModule,
     MatExpansionModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatPaginatorModule
   ]
 })
 export class MaterialModule {}
